@@ -1,0 +1,40 @@
+[PRODUCTION] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE         23:13:59 UTC  preview-host
+TSUNAGI · Preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2.1/P
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+── PRODUCTION ───────────────────────────────────────────────────────────────────────────────────────────────
+  CANONICAL   41  blocks
+  streak      40        longest   40        conversion  100%    panics  0
+  latest      #4395367  slot 115153960  ep 1332   8859b6eb7b0382d6
+  pipeline run  27 leaders → 26 forges → 26 canonical
+── RATES ────────────────────────────────────────────────────────────────────────────────────────────────────
+  EXPECTED bpd 7.5   OBSERVED bpd 7   ACCEPTANCE 78.8%
+  LEADERS 27   FORGES 26   CANONICAL 26   PANICS 0
+
+── FORGE PIPELINE (last result) ─────────────────────────────────────────────────────────────────────────────
+  ✓ Leader  →  ✗ Forge  →  · Promote  →  · Canonical
+── PRODUCTION GRAPHS ────────────────────────────────────────────────────────────────────────────────────────
+  Canonical growth  ▁▁▁▁▁▁▂▃▄▅▆▆█
+  Blocks / day      ▁▂█▄▆█▄▃█
+  Inter-block gap   ▁▅▁▁▃▁▁▁▁▃▁▁▂▁▂▁▁▁▂▁█▁▁▂▁▂▁▁▁▁
+  Acceptance %      ▁▁▁█▁▃███████
+
+── LAST 20 CANONICAL BLOCKS (newest first) ──────────────────────────────────────────────────────────────────
+  #4395367  slot 115153960   ep 1332  8859b6eb7b0382d6
+  #4394876  slot 115140900   ep 1332  6f4916188634bed6
+  #4394786  slot 115138654   ep 1332  0a79c94a629843ab
+  #4394676  slot 115135650   ep 1332  3e1759403832502c
+  #4394613  slot 115133811   ep 1332  4036e063d05885ee
+  #4393907  slot 115116682   ep 1332  2ebb5904d67af2f3
+  #4393406  slot 115103987   ep 1332  0386e577288ae116
+  #4392355  slot 115078043   ep 1331  b2a22931f903b527
+  #4392258  slot 115075559   ep 1331  3ee220051da7df51
+  #4391941  slot 115067303   ep 1331  0fc0ce754843886a
+  #4387611  slot 114956196   ep 1330  cb5c03fd4d27c520
+  #4387277  slot 114947176   ep 1330  15e4cdc1bae80c45
+  #4386209  slot 114919372   ep 1330  24c27c067ffa6240
+  #4386164  slot 114918100   ep 1330  cb253d69a8e6845c
+  #4385517  slot 114902727   ep 1329  0d88ca0278905ab3
+  #4385337  slot 114897418   ep 1329  64520a76ca498b0d
+  #4384532  slot 114876373   ep 1329  1899728667adef50
+  #4384241  slot 114868663   ep 1329  40617b6095ea3f54
+H Home · 1 Production · 2 Guardian · 3 KINTSUGI · 4 Reality · 5 Acceptance · 6 Timeline · 7 KES · 8 Survival

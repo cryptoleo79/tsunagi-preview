@@ -1,0 +1,23 @@
+TSUNAGI — Preview evaluation license (placeholder)
+
+Copyright (c) 2026 the TSUNAGI author. All rights reserved.
+
+This public repository is provided for EVALUATION and TESTING of TSUNAGI on the
+Cardano Preview testnet.
+
+You may:
+  - download and run the provided binaries on the Cardano Preview testnet;
+  - read, share, and reference the documentation and evidence in this repository.
+
+You may not, without prior written permission:
+  - use TSUNAGI on Cardano mainnet;
+  - redistribute modified binaries;
+  - represent this software as production-ready.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. THE AUTHOR IS NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY
+ARISING FROM ITS USE.
+
+NOTE: This Custom Preview/Evaluation license is the selected license for the
+TSUNAGI public preview release. If you intend to rely on specific rights, contact
+the author first.

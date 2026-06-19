@@ -1,0 +1,40 @@
+[HOME] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE               23:13:55 UTC  preview-host
+TSUNAGI · Preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2.1/P
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   STEADY   41 canonical · streak 40 · 0 panics · Guardian ACTIVE · KES 30d
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+── PRODUCTION ───────────────────────────────────────────────────────────────────────────────────────────────
+  CANONICAL                 STREAK                    LONGEST                   CONVERSION
+  41                        40                        40                        100%
+  panics 0 · bpd 7/7.5 · latest #4395367 slot 115153960 ep 1332 8859b6eb7b03
+
+── NEXT LEADER ──────────────────────────────────────────────────────────────────────────────────────────────
+  none in current window · epoch 1332 · 2765 slots left in epoch
+
+── GUARDIAN ─────────────────────────────────────────────────────────────────────────────────────────────────
+  ACTIVE  systemd→guardiand(31029)→node(1053932)                                        L2 ok · inc 2
+
+── REALITY PROOFS ───────────────────────────────────────────────────────────────────────────────────────────
+  13 / 18   72%   proven
+  [████████████████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░]
+
+── TSUNAGI RESOURCES  (the TSUNAGI footprint) ───────────────────────────────────────────────────────────────
+  CPU 1.2%   RSS 404M   HEAP 32M   LMDB 366M    file-backed / evictable
+── NETWORK ──────────────────────────────────────────────────────────────────────────────────────────────────
+  PEERS 89   TIP 4395909   LAG 61 sl   SYNC behind   DISC 0
+── TOP OPEN ITEMS ───────────────────────────────────────────────────────────────────────────────────────────
+  1. Spontaneous Failure Recovery
+  2. Crash-Loop Breaker Activation
+  3. KES Rotation
+
+── LATEST EVENTS ────────────────────────────────────────────────────────────────────────────────────────────
+  06-18 19:12:40[PROD]  canonical block #4395367
+  06-18 15:35:00[PROD]  canonical block #4394876
+  06-18 14:57:34[PROD]  canonical block #4394786
+  06-18 14:07:30[PROD]  canonical block #4394676
+  06-18 13:36:51[PROD]  canonical block #4394613
+  06-18 08:51:22[PROD]  canonical block #4393907
+  06-18 05:19:47[PROD]  canonical block #4393406
+
+
+H Home · 1 Production · 2 Guardian · 3 KINTSUGI · 4 Reality · 5 Acceptance · 6 Timeline · 7 KES · 8 Survival
