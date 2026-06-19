@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read first — FAQ
+    url: https://github.com/cryptoleo79/tsunagi-preview/blob/main/FAQ.md
+    about: Common questions answered.
+  - name: Security
+    url: https://github.com/cryptoleo79/tsunagi-preview/blob/main/SECURITY.md
+    about: Report security issues privately first.

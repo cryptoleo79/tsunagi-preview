@@ -1,22 +1,22 @@
-[REALITY] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE            23:14:03 UTC  preview-host
-TSUNAGI · Preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2.1/P
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────
-── MISSION PROGRESS ─────────────────────────────────────────────────────────────────────────────────────────
+COCKPIT v6.4  [REALITY] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE        02:28:09 UTC  preview-host
+TSUNAGI Preview v2026.06.18-preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+── MISSION PROGRESS ───────────────────────────────────────────────────────────────────────────────────────────────────
   [████████████████████████████████████░░░░░░░░░░░░░░] 13 / 18
 
-── REALITY PROOFS   13 / 18 proven ──────────────────────────────────────────────────────────────────────────
-  ✓ Canonical Production                               ✓ Full Propagation Mechanism
-  ✓ Epoch-Boundary Production                          ✓ Forge Gates
-  ✓ Guardian L1 Crash Detection                        ✓ Recovery Rehearsal
-  ✓ Supervisor Chain (SUP-001)                         ✓ Verified Rollback Chain
-  ✓ Incident Catalogue + Signatures                    ✓ Operational Intelligence Loop
-  ✓ Public Evidence Exposure                           ✓ Acceptance Tracker
-  ✓ Identity Existence                                 ◯ Spontaneous Failure Recovery
-  ◯ Crash-Loop Breaker Activation                      ◯ KES Rotation
-  ◯ Recovery Verification (restore drill)              ◯ Detector-Triggered Intervention
+── REALITY PROOFS   13 / 18 proven ────────────────────────────────────────────────────────────────────────────────────
+  ✓ Canonical Production                                    ✓ Full Propagation Mechanism
+  ✓ Epoch-Boundary Production                               ✓ Forge Gates
+  ✓ Guardian L1 Crash Detection                             ✓ Recovery Rehearsal
+  ✓ Supervisor Chain (SUP-001)                              ✓ Verified Rollback Chain
+  ✓ Incident Catalogue + Signatures                         ✓ Operational Intelligence Loop
+  ✓ Public Evidence Exposure                                ✓ Acceptance Tracker
+  ✓ Identity Existence                                      ◯ Spontaneous Failure Recovery
+  ◯ Crash-Loop Breaker Activation                           ◯ KES Rotation
+  ◯ Recovery Verification (restore drill)                   ◯ Detector-Triggered Intervention
 
 
-── REALITY GAP TRACKER (top) ────────────────────────────────────────────────────────────────────────────────
+── REALITY GAP TRACKER (top) ──────────────────────────────────────────────────────────────────────────────────────────
    1  risk 17   spontaneous failure recovery       UNPROVEN
    2  risk 15   KES WARN transition + rotation     UNPROVEN
    3  risk 13   KINTSUGI corpus backup             UNPROVEN
@@ -37,4 +37,6 @@ TSUNAGI · Preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2.
 
 
 
-H Home · 1 Production · 2 Guardian · 3 KINTSUGI · 4 Reality · 5 Acceptance · 6 Timeline · 7 KES · 8 Survival
+
+
+H Home · 1 Production · 2 Guardian · 3 KINTSUGI · 4 Reality · 5 Acceptance · 6 Timeline · 7 KES · 8 Survival · 9 Networ

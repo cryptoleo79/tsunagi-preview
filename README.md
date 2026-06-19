@@ -84,6 +84,19 @@ It isn't "because Zig." It's the whole organism:
 
 ---
 
+## Quickstart (Preview)
+
+```
+# 1. Download the binary + SHA256SUMS from the latest Release, then verify:
+sha256sum -c SHA256SUMS
+# 2. Run (observe/sync on Preview):
+./tsunagi-node-v2026.06.18-preview-linux-x86_64 run --net preview
+# 3. Watch it (read-only, zero install):
+cockpit
+```
+Full guide: [`DOWNLOAD.md`](DOWNLOAD.md) · [`INSTALL.md`](INSTALL.md) · [`COCKPIT.md`](COCKPIT.md).
+*(Block production requires your own keys — see `INSTALL.md` / `SECURITY.md`.)*
+
 ## Start here
 
 1. **Understand it** → [`WHY-TSUNAGI.md`](WHY-TSUNAGI.md)

@@ -1,24 +1,24 @@
-[PRODUCTION] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE         23:13:59 UTC  preview-host
-TSUNAGI · Preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2.1/P
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────
-── PRODUCTION ───────────────────────────────────────────────────────────────────────────────────────────────
+COCKPIT v6.4  [PRODUCTION] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE     02:28:05 UTC  preview-host
+TSUNAGI Preview v2026.06.18-preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+── PRODUCTION ─────────────────────────────────────────────────────────────────────────────────────────────────────────
   CANONICAL   41  blocks
   streak      40        longest   40        conversion  100%    panics  0
   latest      #4395367  slot 115153960  ep 1332   8859b6eb7b0382d6
   pipeline run  27 leaders → 26 forges → 26 canonical
-── RATES ────────────────────────────────────────────────────────────────────────────────────────────────────
-  EXPECTED bpd 7.5   OBSERVED bpd 7   ACCEPTANCE 78.8%
+── RATES ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  EXPECTED bpd 7.6   OBSERVED bpd 7   ACCEPTANCE 78.8%
   LEADERS 27   FORGES 26   CANONICAL 26   PANICS 0
 
-── FORGE PIPELINE (last result) ─────────────────────────────────────────────────────────────────────────────
+── FORGE PIPELINE (last result) ───────────────────────────────────────────────────────────────────────────────────────
   ✓ Leader  →  ✗ Forge  →  · Promote  →  · Canonical
-── PRODUCTION GRAPHS ────────────────────────────────────────────────────────────────────────────────────────
+── PRODUCTION GRAPHS ──────────────────────────────────────────────────────────────────────────────────────────────────
   Canonical growth  ▁▁▁▁▁▁▂▃▄▅▆▆█
   Blocks / day      ▁▂█▄▆█▄▃█
   Inter-block gap   ▁▅▁▁▃▁▁▁▁▃▁▁▂▁▂▁▁▁▂▁█▁▁▂▁▂▁▁▁▁
   Acceptance %      ▁▁▁█▁▃███████
 
-── LAST 20 CANONICAL BLOCKS (newest first) ──────────────────────────────────────────────────────────────────
+── LAST 20 CANONICAL BLOCKS (newest first) ────────────────────────────────────────────────────────────────────────────
   #4395367  slot 115153960   ep 1332  8859b6eb7b0382d6
   #4394876  slot 115140900   ep 1332  6f4916188634bed6
   #4394786  slot 115138654   ep 1332  0a79c94a629843ab
@@ -37,4 +37,6 @@ TSUNAGI · Preview · Pool TSNG nu2ptydyw7… · zig016-p6 (Zig 0.16 + P1/P2/P2.
   #4385337  slot 114897418   ep 1329  64520a76ca498b0d
   #4384532  slot 114876373   ep 1329  1899728667adef50
   #4384241  slot 114868663   ep 1329  40617b6095ea3f54
-H Home · 1 Production · 2 Guardian · 3 KINTSUGI · 4 Reality · 5 Acceptance · 6 Timeline · 7 KES · 8 Survival
+  #4383551  slot 114850980   ep 1329  721836a7882c6b50
+  #4383445  slot 114848311   ep 1329  e9650f16abe62111
+H Home · 1 Production · 2 Guardian · 3 KINTSUGI · 4 Reality · 5 Acceptance · 6 Timeline · 7 KES · 8 Survival · 9 Networ
