@@ -14,6 +14,11 @@
 <a href="PUBLIC_STATUS.md">Status</a>
 </p>
 
+> **⚠️ Preview only — experimental software. Not mainnet, not production.** This binary is for
+> evaluation/testing on the Cardano **Preview** testnet. **Run observe mode first**
+> (`TSUNAGI_FORGE_ENABLE=0`, see Quickstart). **Do not use real/mainnet keys** with it unless you
+> know exactly what you are doing — block production is opt-in and requires your own Preview keys.
+
 ```
 [HOME] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE        UTC  preview-host
 ── EXECUTIVE SUMMARY ───────────────────────────────────────────────────────────────────────
@@ -89,11 +94,15 @@ It isn't "because Zig." It's the whole organism:
 ```
 # 1. Download the binary + SHA256SUMS from the latest Release, then verify:
 sha256sum -c SHA256SUMS
-# 2. Run (observe/sync on Preview):
-./tsunagi-node-v2026.06.18-preview-linux-x86_64 run --net preview
+# 2. Run OBSERVE-ONLY on Preview (safe for evaluation — will not forge or broadcast):
+TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node-v2026.06.18-preview-linux-x86_64 run --net preview
 # 3. Watch it (read-only, zero install):
 cockpit
 ```
+> ⚠️ Include `TSUNAGI_FORGE_ENABLE=0` for evaluation. With no `forge.env` the node defaults to
+> live/forge mode (it still cannot forge without your own keys, but observe mode is the intended
+> first run). Only enable forging once you supply your own keys — see [`INSTALL.md`](INSTALL.md).
+
 Full guide: [`DOWNLOAD.md`](DOWNLOAD.md) · [`INSTALL.md`](INSTALL.md) · [`COCKPIT.md`](COCKPIT.md).
 *(Block production requires your own keys — see `INSTALL.md` / `SECURITY.md`.)*
 
