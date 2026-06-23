@@ -31,6 +31,19 @@ or, if you grabbed `SHA256SUMS`:
 sha256sum -c SHA256SUMS
 ```
 
+### Run — observe-only (the safe first run)
+
+Will not forge or broadcast. Recommended for evaluation:
+
+```
+chmod +x tsunagi-node-v2026.06.18-preview-linux-x86_64
+TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node-v2026.06.18-preview-linux-x86_64 run --net preview
+```
+
+> ⚠️ Always include `TSUNAGI_FORGE_ENABLE=0` for evaluation. With no `forge.env` the node defaults
+> to live/forge mode (it still cannot forge without your own keys). Only omit it once you supply your
+> own keys and intend to produce — see [`INSTALL.md`](INSTALL.md).
+
 ---
 
 ## State at this release (verifiable on Koios)

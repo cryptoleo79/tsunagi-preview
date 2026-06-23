@@ -37,21 +37,20 @@ sha256sum tsunagi-node
 
 ## 3. Run
 
+**Observe-only — the safe first run** (recommended for evaluation; will not forge or broadcast):
+
 ```
-./tsunagi-node run --net preview      # the correct command for the Preview testnet
+TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node run --net preview
 ```
 
 > **Note on `--help`:** the binary's built-in `--help` shows `zig build run …` examples (the
-> developer invocation). **Ignore those** — with the downloaded binary just run
-> `./tsunagi-node run --net preview` as above.
+> developer invocation). **Ignore those** — with the downloaded binary use the command above.
 
-> ⚠️ **Safety — default mode is "live".** With no `forge.env`, the node defaults to
-> `MODE=live` / `FORGE=enabled` / broadcast on. Without keys it cannot forge valid blocks, but if
-> you only want to **observe/evaluate**, run with forging disabled, e.g.:
-> ```
-> TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node run --net preview
-> ```
-> Only enable live forging once you have supplied your own keys and intend to produce.
+> ⚠️ **Default mode is "live".** With no `forge.env` the node defaults to `MODE=live` /
+> `FORGE=enabled` / broadcast on (it still cannot forge without your own keys). For evaluation,
+> **always include `TSUNAGI_FORGE_ENABLE=0`** as above. Only run the bare
+> `./tsunagi-node run --net preview` (live/forge mode) once you have supplied your own keys and
+> intend to **produce** — that is the advanced/producer path, not the first run.
 
 For supervised operation (recommended for producers), run it under the Guardian supervisor
 described in [`docs/`](docs/) — `systemd → guardiand → node`. Guardian detects a crash, captures
