@@ -92,10 +92,10 @@ It isn't "because Zig." It's the whole organism:
 ## Quickstart (Preview)
 
 ```
-# 1. Download the portable binary + checksum from the latest Release, then verify:
-sha256sum -c tsunagi-preview-linux-x86_64-portable.sha256
+# 1. Download the binary + SHA256SUMS from the latest Release, then verify:
+sha256sum -c SHA256SUMS
 # 2. Run OBSERVE-ONLY on Preview (safe for evaluation — will not forge or broadcast):
-TSUNAGI_FORGE_ENABLE=0 ./tsunagi-preview-linux-x86_64-portable run --net preview --lang en
+TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node-v2026.06.18-preview-linux-x86_64 run --net preview
 # 3. Watch it (read-only, zero install):
 cockpit
 ```

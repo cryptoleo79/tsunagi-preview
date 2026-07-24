@@ -2,20 +2,6 @@
 
 Binaries are attached to GitHub Releases. Each release is a snapshot of evidence, not just code.
 
-## Current recommended download
-
-`v2026.07.24-preview-portable`:
-
-- `tsunagi-preview-linux-x86_64-portable`
-- SHA-256: `4fb4015f61783930637e43d4d8603b207381479c735cc0170b6272b3fda10a69`
-- Baseline x86-64 / SSE2, glibc >= 2.34, `libsodium.so.23`, `liblmdb.so.0`
-
-The generic x86-64 binary from `v2026.06.18-preview` is preserved for provenance but is
-**SUPERSEDED - host-native AVX-512 build**.
-
-AVX2 remains optional and unpublished pending verification. aarch64 remains HOLD. Static musl
-packaging is a separate future release-engineering milestone.
-
 ## What every release contains
 
 - **Binary** (`tsunagi-node`) for Linux x86-64
