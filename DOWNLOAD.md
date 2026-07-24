@@ -5,30 +5,32 @@
 
 ---
 
-## ⬇️ TSUNAGI Preview · Linux x86_64
+## TSUNAGI Preview - Portable Linux x86-64
 
 | | |
 |---|---|
-| **Version** | `v2026.06.18-preview` |
-| **Release date** | 2026-06-18 |
-| **Binary** | `tsunagi-node-v2026.06.18-preview-linux-x86_64` (≈ 22.6 MB) |
-| **SHA256** | `b93a60fe731cc381633fc1b8170b66da9e03032a0ca71569ecf2bdb8e2047dd9` |
-| **Cockpit** | `cockpit` (single stdlib-Python file, zero install) |
-| **Toolchain** | Zig 0.16.0 ReleaseSafe |
+| **Version** | `v2026.07.24-preview-portable` |
+| **Release date** | 2026-07-24 |
+| **Binary** | `tsunagi-preview-linux-x86_64-portable` |
+| **SHA256** | `4fb4015f61783930637e43d4d8603b207381479c735cc0170b6272b3fda10a69` |
+| **Source** | `c8082152fe837e6dde045086631b09aa0058d788` |
+| **Toolchain** | Zig 0.16.0 ReleaseSafe, baseline x86-64 / SSE2 |
+| **Runtime** | glibc >= 2.34, `libsodium.so.23`, `liblmdb.so.0` |
 
-**Download:** the binary, `cockpit`, and `SHA256SUMS` are attached to the
-[GitHub Release](RELEASES.md) for `v2026.06.18-preview`.
+This is the **recommended/default** download. The old
+`tsunagi-node-v2026.06.18-preview-linux-x86_64` artifact is preserved but marked
+**SUPERSEDED - host-native AVX-512 build**.
 
 ### Verify before you run
 
 ```
-sha256sum tsunagi-node-v2026.06.18-preview-linux-x86_64
+sha256sum tsunagi-preview-linux-x86_64-portable
 # must print exactly:
-# b93a60fe731cc381633fc1b8170b66da9e03032a0ca71569ecf2bdb8e2047dd9
+# 4fb4015f61783930637e43d4d8603b207381479c735cc0170b6272b3fda10a69
 ```
-or, if you grabbed `SHA256SUMS`:
+or, with the published checksum file:
 ```
-sha256sum -c SHA256SUMS
+sha256sum -c tsunagi-preview-linux-x86_64-portable.sha256
 ```
 
 ### Run — observe-only (the safe first run)
@@ -36,8 +38,10 @@ sha256sum -c SHA256SUMS
 Will not forge or broadcast. Recommended for evaluation:
 
 ```
-chmod +x tsunagi-node-v2026.06.18-preview-linux-x86_64
-TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node-v2026.06.18-preview-linux-x86_64 run --net preview
+chmod +x tsunagi-preview-linux-x86_64-portable
+TSUNAGI_HOME="$HOME/tsunagi-home-preview" \
+TSUNAGI_FORGE_ENABLE=0 \
+./tsunagi-preview-linux-x86_64-portable run --net preview --lang en
 ```
 
 > ⚠️ Always include `TSUNAGI_FORGE_ENABLE=0` for evaluation. With no `forge.env` the node defaults

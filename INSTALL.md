@@ -7,19 +7,21 @@
 
 ## Requirements
 
-- Linux x86-64.
+- Linux x86-64 with baseline SSE2 support.
+- glibc 2.34 or newer.
+- `libsodium.so.23` and `liblmdb.so.0` (`libsodium23` and `liblmdb0` on Debian/Ubuntu).
 - A reachable Cardano Preview relay/network connection.
 - ~A few GB of disk for chain state.
 - (For Cockpit) Python 3.8+ — standard library only, **nothing to pip install**.
 
 ## 1. Download
 
-Grab the latest binary from the [Releases](RELEASES.md) page (each release lists its **SHA256**).
+Grab `tsunagi-preview-linux-x86_64-portable` and its `.sha256` file from the latest
+[Release](RELEASES.md). The older generic x86-64 artifact is preserved for provenance but is
+**SUPERSEDED - host-native AVX-512 build**.
 
 ```
-# verify the download against the published checksum
-sha256sum tsunagi-node
-# compare with the SHA256 in the release notes — they must match
+sha256sum -c tsunagi-preview-linux-x86_64-portable.sha256
 ```
 
 ## 2. Configure
@@ -40,7 +42,9 @@ sha256sum tsunagi-node
 **Observe-only — the safe first run** (recommended for evaluation; will not forge or broadcast):
 
 ```
-TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node run --net preview
+TSUNAGI_HOME="$HOME/tsunagi-home-preview" \
+TSUNAGI_FORGE_ENABLE=0 \
+./tsunagi-preview-linux-x86_64-portable run --net preview --lang en
 ```
 
 > **Note on `--help`:** the binary's built-in `--help` shows `zig build run …` examples (the

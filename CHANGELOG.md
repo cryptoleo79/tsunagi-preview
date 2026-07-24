@@ -2,6 +2,12 @@
 
 All notable, evidence-backed changes. Newest first. Figures verifiable on Koios / Preview explorers.
 
+## 2026-07-24 - Portable Linux x86-64 release
+- Published `tsunagi-preview-linux-x86_64-portable` as the recommended/default artifact.
+- Explicit baseline x86-64 / SSE2 target closes the host-native AVX-512 `SIGILL` defect.
+- Preserved the previous generic artifact and marked it superseded.
+- AVX2 deferred pending verification; aarch64 remains HOLD; static musl remains a future milestone.
+
 ## 2026-06-18 — Preview release v2026.06.18-preview
 - First public Preview release: binary + cockpit + SHA256, download page, clean-room install validated.
 - Status: 41 canonical · streak 40 · longest 40 · conversion 100% · 0 panics.
