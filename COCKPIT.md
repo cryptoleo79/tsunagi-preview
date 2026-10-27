@@ -1,7 +1,9 @@
 # Cockpit — the operator console
 
-Cockpit is a **read-only** full-screen terminal console. It aggregates the node's existing
-telemetry and evidence into one screen so an operator can understand TSUNAGI in ~5 seconds.
+The historical June 2026 producer release included Cockpit, a **read-only** full-screen terminal
+console. Its documented design aggregates that release's telemetry and evidence into one screen.
+The October 2026 portable follower release did not list Cockpit among its assets; this page does
+not describe a qualified October follower integration.
 
 > **Cockpit observes. It never acts.** No controls, no restart buttons, no writes, no
 > remediation. It is an instrument panel, not an autopilot.
@@ -16,7 +18,9 @@ cockpit --once     # one plain-text snapshot (non-TTY / scripts)
 
 ## The persistent status bar
 
-Always visible at the top, on every page:
+The following example shows the **2026-06-18 Preview snapshot**. Its counts, KES countdown, and
+Guardian state are historical sample values, not current telemetry. The status bar is designed to
+appear at the top of each page:
 
 ```
 [HOME] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE      UTC  preview-host

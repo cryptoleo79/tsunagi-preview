@@ -3,7 +3,7 @@
 <p align="center">Cardano <b>Preview</b> testnet · written in Zig · evidence-first operations</p>
 
 <p align="center">
-<b>STATE: STEADY</b> &nbsp;·&nbsp; Canonical <b>41</b> &nbsp;·&nbsp; Streak <b>40</b> &nbsp;·&nbsp; Longest <b>40</b> &nbsp;·&nbsp; Conversion <b>100%</b> &nbsp;·&nbsp; Panics <b>0</b>
+Historical Preview snapshot (2026-06-18) &nbsp;·&nbsp; Canonical <b>41</b> &nbsp;·&nbsp; Streak <b>40</b> &nbsp;·&nbsp; Longest <b>40</b> &nbsp;·&nbsp; Supervised conversion <b>100%</b> &nbsp;·&nbsp; Panics <b>0</b>
 </p>
 <p align="center">
 <a href="DOWNLOAD.md">Download</a> ·
@@ -14,10 +14,12 @@
 <a href="PUBLIC_STATUS.md">Status</a>
 </p>
 
-> **⚠️ Preview only — experimental software. Not mainnet, not production.** This binary is for
-> evaluation/testing on the Cardano **Preview** testnet. **Run observe mode first**
-> (`TSUNAGI_FORGE_ENABLE=0`, see Quickstart). **Do not use real/mainnet keys** with it unless you
-> know exactly what you are doing — block production is opt-in and requires your own Preview keys.
+> **⚠️ Preview only — experimental software. Not Mainnet or production.** The June producer and
+> October follower are different executables with different instructions. For the historical
+> June producer, use observe mode first (`TSUNAGI_FORGE_ENABLE=0`). The October follower is not
+> qualified for block production. Never use Mainnet keys with either Preview release.
+
+The following Cockpit transcript is a historical illustration, not live telemetry.
 
 ```
 [HOME] [STEADY]   Canonical 41 · Streak 40 · KES 30d · Guardian ACTIVE        UTC  preview-host
@@ -39,13 +41,13 @@
 
 ## Truth first. Evidence first. Reality first.
 
-Most node projects tell you what they *should* do. TSUNAGI tells you what it has *actually
-proven* — and, just as loudly, what it has **not**. Every claim in this repository links to
-evidence you can verify yourself on-chain.
+The documentation records dated Preview observations and open gaps. Block-production claims and
+operational rehearsals have different evidence sources; verify the underlying receipts and
+current Preview chain data before treating historical claims as present state.
 
 TSUNAGI is not a fork of `cardano-node`. It is an independent implementation of the producing
-path — election, forge, propagation, acceptance — written from scratch in Zig, and proven in
-production on the Preview testnet.
+path — election, forge, propagation, acceptance — written from scratch in Zig, with
+dated Preview testnet block-production evidence.
 
 But the node is only half of it. The other half is an operational philosophy:
 
@@ -55,22 +57,27 @@ But the node is only half of it. The other half is an operational philosophy:
 
 ## What has it proven?
 
-*(Live numbers in [`PUBLIC_STATUS.md`](PUBLIC_STATUS.md); all verifiable on Koios/any Preview explorer.)*
+*The figures below are historical Preview observations reported in [`PUBLIC_STATUS.md`](PUBLIC_STATUS.md) for 2026-06-18. Check the cited receipts and current on-chain data before describing present operation.*
 
 - **41 canonical blocks** produced and confirmed on-chain.
-- **Current streak 40 · longest streak 40** — consecutive elected slots converted to canonical blocks.
+- **Streak 40 · longest streak 40 at that snapshot** — consecutive elected slots converted to canonical blocks.
 - **100% supervised conversion** — all forges → canonical, **0 panics**, since the SUP-001 supervisor cutover.
 - **Self-recovery proven** — the Guardian supervisor detected a killed node and recovered it in **3.8 s** with no human; the recovered node kept producing.
 - **Supervised by `systemd → guardiand → node`** (SUP-001) — verified kill→respawn in ~7 s.
 
-## What has it NOT proven?
+[`REALITY-GAPS.md`](REALITY-GAPS.md) contains a 31-block canonical production row that differs from the 41-block status snapshot. Keep both records visible; reconcile their dates and scopes from underlying receipts before asserting a chronology.
 
-We document uncertainty instead of hiding it (see [`REALITY-GAPS.md`](REALITY-GAPS.md)):
+## What remained unproven in the 2026-06-18 record?
 
-- ◯ **Spontaneous failure recovery** — only a *controlled* rehearsal so far; a real unplanned failure hasn't happened yet.
-- ◯ **Crash-loop breaker activation** · ◯ **KES rotation** · ◯ **Identity recovery drill**.
+The dated [`REALITY-GAPS.md`](REALITY-GAPS.md) record listed these open Preview proofs. It does
+not establish their status after 2026-06-18:
 
-This honesty *is* the product.
+- ◯ **Spontaneous failure recovery** — a controlled rehearsal was recorded, but no unplanned
+  failure recovery was documented by 2026-06-18.
+- ◯ **Crash-loop breaker activation** · ◯ **KES rotation** · ◯ **Identity recovery drill** —
+  listed as open at that snapshot.
+
+Check later evidence before describing present gap status.
 
 ---
 
@@ -89,38 +96,44 @@ It isn't "because Zig." It's the whole organism:
 
 ---
 
-## Quickstart (Preview)
+## Choose a Preview release
+
+As checked on **2026-10-27**, GitHub marked the
+[`v2026.10.05-preview-portable-x86_64` release](https://github.com/cryptoleo79/tsunagi-preview/releases/tag/v2026.10.05-preview-portable-x86_64)
+as **Latest**. Its binary is `tsunagi-preview-v2026.10.05-linux-x86_64`, a portable Preview
+**follower** qualified for the functions stated in that release. It is **not qualified there for
+block production**. Download its `SHA256SUMS` and release-specific `INSTALL.md`; verify the binary
+and follow those instructions. Recheck GitHub Releases for later versions.
 
 ```
-# 1. Download the binary + SHA256SUMS from the latest Release, then verify:
+# After downloading the October follower binary and its SHA256SUMS from that same release:
 sha256sum -c SHA256SUMS
-# 2. Run OBSERVE-ONLY on Preview (safe for evaluation — will not forge or broadcast):
-TSUNAGI_FORGE_ENABLE=0 ./tsunagi-node-v2026.06.18-preview-linux-x86_64 run --net preview
-# 3. Watch it (read-only, zero install):
-cockpit
 ```
-> ⚠️ Include `TSUNAGI_FORGE_ENABLE=0` for evaluation. With no `forge.env` the node defaults to
-> live/forge mode (it still cannot forge without your own keys, but observe mode is the intended
-> first run). Only enable forging once you supply your own keys — see [`INSTALL.md`](INSTALL.md).
+
+The **June 2026** producer binary and Cockpit transcript on this page are historical. Its
+observe-only example uses a *different* executable and applies only to that June release; see
+[`DOWNLOAD.md`](DOWNLOAD.md) and [`INSTALL.md`](INSTALL.md). Do not use the June command or
+block-production claims as qualification for the October follower.
 
 Full guide: [`DOWNLOAD.md`](DOWNLOAD.md) · [`INSTALL.md`](INSTALL.md) · [`COCKPIT.md`](COCKPIT.md).
-*(Block production requires your own keys — see `INSTALL.md` / `SECURITY.md`.)*
+*(Any block-production evaluation requires your own Preview keys — see `SECURITY.md`.)*
 
 ## Start here
 
 1. **Understand it** → [`WHY-TSUNAGI.md`](WHY-TSUNAGI.md)
-2. **Install & run** → [`INSTALL.md`](INSTALL.md) *(target: running in under 5 minutes)*
-3. **Watch it** → [`COCKPIT.md`](COCKPIT.md) — run `cockpit` and read the organism in 5 seconds
-4. **Verify the claims** → [`JOURNEY.md`](JOURNEY.md) · [`REALITY-GAPS.md`](REALITY-GAPS.md) · [`SURVIVAL.md`](SURVIVAL.md)
-5. **Report findings** → open an issue (see [`FAQ.md`](FAQ.md) and [`SECURITY.md`](SECURITY.md))
+2. **Select a release** → [`DOWNLOAD.md`](DOWNLOAD.md) · [`RELEASES.md`](RELEASES.md)
+3. **Read release-specific installation guidance** → [`INSTALL.md`](INSTALL.md)
+4. **Explore the historical Cockpit** → [`COCKPIT.md`](COCKPIT.md)
+5. **Verify the claims** → [`JOURNEY.md`](JOURNEY.md) · [`REALITY-GAPS.md`](REALITY-GAPS.md) · [`SURVIVAL.md`](SURVIVAL.md)
+6. **Report findings** → open an issue (see [`FAQ.md`](FAQ.md) and [`SECURITY.md`](SECURITY.md))
 
 ---
 
 ## Screenshots
 
-Three screens tell the whole story (see [`screenshots/`](screenshots/)):
+Three captured screens illustrate that historical state (see [`screenshots/`](screenshots/)):
 
-1. **[Home](screenshots/cockpit-home.txt)** — what TSUNAGI is doing right now (state, production, guardian, reality proofs, footprint).
+1. **[Home](screenshots/cockpit-home.txt)** — what the Cockpit showed at the captured snapshot (state, production, guardian, reality proofs, footprint).
 2. **[Production](screenshots/cockpit-production.txt)** — block production detail (KPIs, rates, forge pipeline, last-20 blocks).
 3. **[Reality](screenshots/cockpit-reality.txt)** — what it has proven and what it hasn't (mission progress + ranked gaps).
 

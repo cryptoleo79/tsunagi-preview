@@ -1,17 +1,16 @@
 # Roadmap
 
-TSUNAGI is in **steady state**. The roadmap is not a feature list — it is a list of proofs
-reality has yet to provide. We do not manufacture these events; we wait for them and record the
-evidence when they happen.
+The **2026-06-18 Preview status snapshot** classified TSUNAGI as **STEADY**. This roadmap records
+proofs still open at that snapshot. Later operational state requires later evidence.
 
 ## The roadmap is the Reality Gap list
 
-The next milestones are exactly the open gaps in [`REALITY-GAPS.md`](REALITY-GAPS.md), in risk
-order:
+At that date, the next milestones were the open gaps in [`REALITY-GAPS.md`](REALITY-GAPS.md), in
+risk order:
 
-1. **Spontaneous failure recovery** — a real, unplanned failure handled autonomously by Guardian. The keystone proof. (Only a controlled rehearsal exists today.)
+1. **Spontaneous failure recovery** — a real, unplanned failure handled autonomously by Guardian. The keystone proof. (Only a controlled rehearsal was recorded as of 2026-06-18.)
 2. **KES rotation** — perform the first key-evolution rotation.
-3. **Crash-loop breaker activation** — observe the runaway-restart safety trip in production.
+3. **Crash-loop breaker activation** — observe the runaway-restart safety trip in Preview operation.
 4. **Identity recovery drill** — restore the verified cold key into a recovered environment.
 5. **Detector-triggered intervention** — the liveness detector firing on a real anomaly.
 
