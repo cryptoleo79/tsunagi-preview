@@ -1,21 +1,21 @@
 # TSUNAGI — Public Status
 
-*Snapshot of verified, on-chain-checkable state. Updated each release. All figures are
-independently verifiable on Koios / any Cardano Preview explorer.*
+*Historical Preview snapshot recorded for the 2026-06-18 release. These figures are not live
+telemetry. Check original receipts and current Preview chain data for later state.*
 
 **As of 2026-06-18 · STATE: STEADY**
 
 | metric | value |
 |---|---|
 | Canonical blocks | **41** |
-| Current streak | **40** |
+| Streak at snapshot | **40** |
 | Longest streak | **40** |
 | Supervised conversion | **100%** (all forges → canonical since the SUP-001 cutover) |
 | Panics | **0** |
 | Supervisor chain | `systemd → guardiand → node` (NRestarts = 1, the SUP-001 kill-test only) |
-| Latest block | #4395367 · slot 115153960 · epoch 1332 |
-| Latest hash | `8859b6eb7b0382d6…` |
-| KES | ~30 days remaining (state: ok) |
+| Latest block at snapshot | #4395367 · slot 115153960 · epoch 1332 |
+| Latest hash at snapshot | `8859b6eb7b0382d6…` |
+| KES at snapshot | ~30 days remaining (state: ok) |
 
 ## Proven capabilities (13)
 
