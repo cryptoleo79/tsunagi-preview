@@ -6,6 +6,12 @@
 Historical Preview snapshot (2026-06-18) &nbsp;·&nbsp; Canonical <b>41</b> &nbsp;·&nbsp; Streak <b>40</b> &nbsp;·&nbsp; Longest <b>40</b> &nbsp;·&nbsp; Supervised conversion <b>100%</b> &nbsp;·&nbsp; Panics <b>0</b>
 </p>
 <p align="center">
+<b>Preview production update · 2026-11-15: 1,925 blocks produced (operator-reported).</b><br>
+Current canonical count and independently verifiable block hashes: <a href="https://www.tsunagi.tech/blocks/">live Preview chain record</a>.<br>
+The 41-block figure above is the historical June snapshot, not the current running total. This is not a Mainnet-forging claim.
+</p>
+
+<p align="center">
 <a href="DOWNLOAD.md">Download</a> ·
 <a href="INSTALL.md">Install</a> ·
 <a href="COCKPIT.md">Cockpit</a> ·
